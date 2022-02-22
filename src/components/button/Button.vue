@@ -1,4 +1,5 @@
 <template>
+    <!-- component 是一個動態組件 - button tag -->
     <component
         :is="computedTag"
         class="button"
@@ -88,6 +89,9 @@ export default {
     },
     computed: {
         computedTag() {
+            // this.$attrs 是 vbind 得出
+            // 參考：https://cn.vuejs.org/v2/api/#v-bind
+
             if (this.$attrs.disabled !== undefined && this.$attrs.disabled !== false) {
                 return 'button'
             }

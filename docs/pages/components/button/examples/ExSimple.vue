@@ -1,6 +1,8 @@
 <template>
     <section>
-        <b-button @click="clickMe">Click Me</b-button>
+        <b-button @click="clickMe" hello="yong" world="hugo">Hello</b-button>
+        <b-button loading>Loading</b-button>
+        <b-button rounded>Rounded</b-button>
     </section>
 </template>
 

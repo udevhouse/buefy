@@ -1,3 +1,4 @@
+// 設定檔
 let config = {
     defaultContainerElement: null,
     defaultIconPack: 'mdi',
